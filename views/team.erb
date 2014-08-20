@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to the <%= @players[0][:team] %></title>
+  </head>
+  <body>
+    <h1><b>The <%= @players[0][:team] %></b></h1>
+    <ul>
+    <% @players.each do |player|  %>
+        <li><%= "#{player[:first_name]}" %></li>
+        <% end %>
+    </ul>
+  </body>
+</html>
