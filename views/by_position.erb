@@ -1,0 +1,7 @@
+<h2><%= @position %></h2>
+<ul>
+  <% @players.each do |player|%>
+  <li><%= "#{player[:first_name]} #{player[:last_name]} : #{player[:team]}" %></li>
+  <%end%>
+</ul>
+

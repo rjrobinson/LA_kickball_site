@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Welcome To the LEAGUE! </title>
-    <!-- <link rel="stylesheet" href="http://localhost:9393/views/css/styles.css"> -->
-  </head>
-
-  <body>
     <h1>League Data</h1>
-
 <!-- List team names -->
-    <ul>
+    <ul class="team-names">
     <% @teams.each do |team|  %>
         <li><a href="/<%=team%>"><%=team %></a></li>
         <% end %>
     </ul>
-  </body>
-</html>
+
+    <h3>View by position</h3>
+    <ul>
+        <% @position.each do |position|%>
+        <li><a href="/allplayers/<%=position%>"><%=position%></a></li>
+        <% end %>
+    </ul>
